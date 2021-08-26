@@ -1,0 +1,284 @@
+
+/* Reference link: https://www.onlinewebfonts.com/download/f4d1593471d222ddebd973210265762a */
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@font-face {font-family: "Pokemon"; 
+	src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); 
+	src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), 
+	url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), 
+	url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), 
+	url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg"); }
+
+body{
+	background: lightskyblue url("sourceImg/Poke_Ball.png") top left/50px 50px repeat;
+	animation: animateBodyBackground 30s linear 1s infinite running;
+}
+
+label{
+	color: rgba(0,0,0, 1);
+	font-size: 25px;
+	font-family: Pokemon;
+}
+
+input{
+	outline: none;
+}
+a{
+	position: absolute;
+	bottom: 6%;
+	width: 100%;
+	left: 0%;
+	text-align: center;
+	line-height: 5%;
+}
+@keyframes animateBodyBackground {
+	from { background-position: 0 -100%; }
+	to { background-position: 100% 0%; }
+}
+
+#mainBackground{
+	background: rgba(255,255,255, 0.8);
+	border: 1px solid #000000;
+	border-radius: 25px;
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	min-width: 500px;
+	min-height: 750px;
+	max-width: 800px;
+	max-height: 1000px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.container{
+	overflow: auto;
+	background: rgba(255,255,255, 1);
+	border: 2px solid #000000;
+	border-radius: 25px;
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#loginLogo{
+	width: 50%;
+	padding-left: 50%;
+	padding-top: 5%;
+	transform: translate(-25%);
+}
+
+input[name="rusername"],input[name="lusername"]{
+	border: 3px solid #000000;
+	border-radius: 25px;
+	width: 90%;
+	height: 60%;
+	display: block;
+}
+input[name="rpassword"],input[name="lpassword"]{
+	border: 3px solid #000000;
+	border-radius: 25px;
+	width: 90%;
+	height: 60%;
+	display: block;
+}
+input[name="cpassword"],input[name="npassword"]{
+	border: 3px solid #000000;
+	border-radius: 25px;
+	width: 90%;
+	height: 60%;
+	display: block;
+}
+div[id="registerContainer"] > div[id="dstarter"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 35%;
+	left: 10%;
+}
+
+div[id="loginContainer"] > div[id="username"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 10%;
+	left: 10%;
+}
+
+
+div[id="loginContainer"] > div[id="password"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 25%;
+	left: 10%;
+}
+
+
+div[id="loginContainer"] > button[id="login"]{
+	position: relative;
+	top: 50%;
+	width: 80%;
+	left: 10%;
+	background-color: #4CAF50; /* Green */
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+
+/*
+div[id="loginContainer"] > button[id="toregister"]{
+	position: relative;
+	top: 50%;
+	left: 15%;
+	background-color: lightskyblue;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+*/
+div[id="registerContainer"] > div[id="username"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 5%;
+	left: 10%;
+}
+
+div[id="registerContainer"] > div[id="password"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 15%;
+	left: 10%;
+}
+
+div[id="registerContainer"] > div[id="cpassword"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 25%;
+	left: 10%;
+}
+
+
+div[id="registerContainer"] > button[id="register"]{
+	background-color: lightskyblue;
+	position: relative;
+	top: 40%;
+	width: 80%;
+	left: 10%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+
+p[id="errorMessage"]{
+	color:red;
+	position:absolute;
+	text-align: center;
+	width: 100%;
+	bottom:-4%;
+	font-family: Arial Narrow;
+}
+div[id="welcomeContainer"] > button[id="play"]{
+	background-color: lightgreen;
+	position: relative;
+	top: 0%;
+	width: 80%;
+	left: 10%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+div[id="welcomeContainer"] > button[id="resetPassword"]{
+	background-color: orangered;
+	position: relative;
+	top: 10%;
+	width: 80%;
+	left: 10%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+div[id="welcomeContainer"] > button[id="logout"]{
+	background-color: lightskyblue;
+	position: relative;
+	top: 20%;
+	width: 80%;
+	left: 10%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+div[id="welcomeContainer"] > h1{
+	position: relative;
+	left:  10%;
+	width: 80%;
+}
+
+div[id="resetPasswordContainer"] > div[id="npassword"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 10%;
+	left: 10%;
+}
+
+div[id="resetPasswordContainer"] > div[id="cpassword"]{
+	width: 90%;
+	height: 10%;
+	display: block;
+	position: relative;
+	top: 25%;
+	left: 10%;
+}
+
+div[id="resetPasswordContainer"] > button[id="resetPassword"]{
+	background-color: orangered;
+	position: absolute;
+	bottom: 25%;
+	width: 80%;
+	left: 10%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
+
+div[id="resetPasswordContainer"] > button[id="cancel"]{
+	background-color: indianred;
+	position: absolute;
+	bottom: 10%;
+	width: 80%;
+	left: 10%;
+	color: white;
+	padding: 8px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}

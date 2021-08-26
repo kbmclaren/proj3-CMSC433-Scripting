@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>World Map</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <img src="../sourceImg/header.png" alt="header" width="1024px" height="200px">
+    <h2>World Map</h2>
+    <p>There are many different things to do here! Click on the region markers to travel from place to place.</p>
+    <hr><br>
+
+    <img src="../sourceImg/WorldMap.png" alt="World Map" usemap="#map">
+    <map name="map">
+      <area shape="circle" title="Team Rocket's Gym - Easy" coords="199,567,21" alt="Rocket Gym" href="rocketGym.php">
+      <area shape="circle" title="Pewter Gym - Medium" coords="350,88,25" alt="Pewter Gym" href="pewterGym.php">
+      <area shape="circle" title="Cerulean Gym - Hard" coords="878,394,25" alt="Cerulean Gym" href="ceruleanGym.php">
+      <area shape="circle" title="Poké Mart"coords="784,255,25" alt="Poké Mart" href="store.php">
+      <area shape="circle" title="Pokémon Hospital"coords="303,285,25" alt="Pokémon Center" href="clinic.php">
+      <area shape="circle" title="Pokémon Training Center"coords="665,83,25" alt="Pokémon Training Center" href="training.php">
+      <area shape="circle" title="The Forest - Medium"coords="68,386,25" alt="Forest" href="forest.php">
+      <area shape="circle" title="The Beach - Easy"coords="815,660,25" alt="Beach" href="beach.php">
+      <area shape="circle" title="The Volcano - Hard"coords="958,61,25" alt="Mountain" href="volcano.php">
+    </map>
+
+    <br>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="float: right;">Top</button>
+    <button type="reset" id="navToAccount" onclick="location.href='welcome.php';" style="float: top-left;"> Back To Account</button>
+  </body>
+</html>
